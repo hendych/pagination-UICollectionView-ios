@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="NkP-Hb-6LK" customClass="CustomCollectionViewCell" customModule="pagination_collectionview" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Itsukushima_Gate" translatesAutoresizingMaskIntoConstraints="NO" id="pKd-4M-wce">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="88"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="88" id="s1h-Mo-emJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Itsukushima gate is a traditional japanese gate located at the heart" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jz-YV-F4m">
+                        <rect key="frame" x="8" y="96" width="134" height="47"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="6Jz-YV-F4m" firstAttribute="leading" secondItem="NkP-Hb-6LK" secondAttribute="leading" constant="8" id="9a0-Fp-AQ1"/>
+                <constraint firstItem="6Jz-YV-F4m" firstAttribute="top" secondItem="pKd-4M-wce" secondAttribute="bottom" constant="8" id="CHh-Sf-AU5"/>
+                <constraint firstItem="pKd-4M-wce" firstAttribute="top" secondItem="NkP-Hb-6LK" secondAttribute="top" id="HYq-Uz-GhD"/>
+                <constraint firstAttribute="trailing" secondItem="pKd-4M-wce" secondAttribute="trailing" id="Otb-01-THW"/>
+                <constraint firstAttribute="trailing" secondItem="6Jz-YV-F4m" secondAttribute="trailing" constant="8" id="iXo-pP-fNX"/>
+                <constraint firstItem="pKd-4M-wce" firstAttribute="leading" secondItem="NkP-Hb-6LK" secondAttribute="leading" id="lIL-OS-7ah"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VAd-MU-DNd"/>
+            <size key="customSize" width="145" height="135"/>
+            <point key="canvasLocation" x="42" y="-3"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Itsukushima_Gate" width="110" height="73"/>
+    </resources>
+</document>
